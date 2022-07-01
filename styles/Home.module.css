@@ -1,0 +1,28 @@
+.main {
+  min-height: 100vh;
+  background-color: #ef9f27;
+  padding: 4rem 0;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 36px;
+}
+
+
+@media (max-width: 600px) {
+  .middle {
+    font-size: 28px;
+  }
+}
