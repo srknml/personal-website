@@ -20,6 +20,9 @@ html {
     justify-content: space-between;
     align-items: self-start;
   }
+  .custom-h {
+    height: calc(100vh - 90px);
+  }
   .border-rad {
     border-radius: 0.5rem;
   }
