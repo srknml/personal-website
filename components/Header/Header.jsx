@@ -22,4 +22,8 @@ const Header = () => {
   );
 };
 
+// Buttons out of div @TODO
+// Carousel stops sliding on mobile @TODO
+// Hamburber menu needs to be closed on click @TODO
+
 export default Header;
