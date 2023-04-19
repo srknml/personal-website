@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     name: "LinkedIn",
-    url: "https://linkedin.com/jaketrent",
+    url: "https://www.linkedin.com/in/serkan-nemli-b9a0001b6/",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const SocialIcons = ({ motions }) => {
       className="flex-row-between min-h-max  md:flex md:justify-between"
     >
       <SocialIcon
-        url="https://linkedin.com/jaketrent"
+        url="https://www.linkedin.com/in/serkan-nemli-b9a0001b6/"
         fgColor="white"
         bgColor="transparent"
         className="cursor-pointer"
