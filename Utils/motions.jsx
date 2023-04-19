@@ -1,7 +1,7 @@
 export const motions = {
   rightToLeft: {
     initial: {
-      x: 100,
+      x: 1000,
       opacity: 0,
     },
     animate: {
@@ -15,7 +15,7 @@ export const motions = {
   },
   leftToRight: {
     initial: {
-      x: -100,
+      x: -1000,
       opacity: 0,
     },
     animate: {
