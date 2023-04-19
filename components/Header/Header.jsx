@@ -13,7 +13,7 @@ const Header = () => {
         isOpen ? "border-b-orange-500 border-b-2 bg-gray-900" : "bg-inherit "
       }`}
     >
-      <Navbar motions={motions} isOpen={isOpen}>
+      <Navbar motions={motions} isOpen={isOpen}  setIsOpen={setIsOpen} >
         <Hamburger setIsOpen={setIsOpen} isOpen={isOpen} />
       </Navbar>
 

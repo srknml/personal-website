@@ -113,7 +113,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="flex flex-col flex-grow custom-h align-middle  justify-between border-red-400 border-2 w-full md:w-2/3 mx-auto"
+      className="flex flex-col  custom-h align-middle  justify-between border-red-400 border-2 w-full md:w-2/3 mx-auto"
     >
       <h1 className="text-bold  text-2xl block text-center w-full md:w-2/3 mx-auto py-4 border-gray-500 border-b-2  ">
         Skills and Tools

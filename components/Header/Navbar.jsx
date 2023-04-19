@@ -1,8 +1,36 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
+const Routes = [
+  {
+    name: "Home",
+    path: "#",
+  },
+  {
+    name: "About Me",
+    path: "#aboutme",
+  },
+  {
+    name: "Skills and Tools",
+    path: "#skills",
+  },
+  {
+    name: "Resume",
+    path: "#resume",
+  },
+  {
+    name: "Contact",
+    path: "#contact",
+  },
+  {
+    name: "Blog",
+    path: "#blog",
+  },
+];
 
 const Navbar = (props) => {
-  const { motions, isOpen } = props;
+  const { motions, isOpen, setIsOpen } = props;
   return (
     <motion.navbar
       initial={motions.leftToRight.initial}
@@ -14,31 +42,16 @@ const Navbar = (props) => {
           isOpen ? "flex-col" : "hidden"
         } `}
       >
-        <li>
-          <a className="nav-btn" href="#">
-            Home
-          </a>
-        </li>
-        <li>
-          <a className="nav-btn" href="#aboutme">
-            About Me
-          </a>
-        </li>
-        <li>
-          <a className="nav-btn" href="#skills">
-            Skills and Tools
-          </a>
-        </li>
-        <li>
-          <a className="nav-btn" href="#resume">
-            Resume
-          </a>
-        </li>
-        <li>
-          <a className="nav-btn" href="#contact">
-            Contact
-          </a>
-        </li>
+        {Routes.map((route) => {
+          return (
+            <Link href={route.path} key={route.name}>
+              <a onClick={() => setIsOpen(false)} className="nav-btn">
+                {" "}
+                {route.name}{" "}
+              </a>
+            </Link>
+          );
+        })}
       </ul>
     </motion.navbar>
   );
