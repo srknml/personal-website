@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="flex flex-col flex-grow h-screen border-red-400 border-2 w-full md:w-2/3 m-auto"
+      className="flex flex-col flex-grow custom-h border-red-400 border-2 w-full md:w-2/3 m-auto"
     >
       <Slide colors={colors} title={"Colors"} duration={20} direction={1} />
       <Slide colors={colors} title={"Colors"} duration={10} />
