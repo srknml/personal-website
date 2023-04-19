@@ -4,9 +4,6 @@ import myImage from "../../public/image.jpg";
 import { motion } from "framer-motion";
 import Utils from "../../Utils/index";
 
-// how to use static image in nextjs
-// https://nextjs.org/docs/basic-features/image-optimization
-
 const Hero = () => {
   const { motions } = Utils;
   return (
@@ -20,6 +17,8 @@ const Hero = () => {
           <Image
             className="border-rad"
             objectFit="contain"
+            placeholder="blur"
+            layout="responsive"
             src={myImage}
             alt="image"
           />
