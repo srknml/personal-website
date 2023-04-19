@@ -8,7 +8,7 @@ const Slide = ({ title, colors, direction, duration }) => {
   const [isPlaying, setIsPlaying] = React.useState(true);
 
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col justify-between">
       <motion.h1
         // transition={{ duration: 2, ease: "linear", repeat: Infinity }}
         // initial={{ x: 250 }}
@@ -24,7 +24,7 @@ const Slide = ({ title, colors, direction, duration }) => {
         onMouseLeave={() => {
           setIsPlaying(true);
         }}
-        className="w-full p-2 border-orange-400 border-t-2 "
+        className="w-full pb-2 border-orange-400 border-b-2 border-opacity-60 "
       >
         <Ticker duration={duration} direction={direction} isPlaying={isPlaying}>
           {colors.map((color, index) => {
