@@ -9,7 +9,7 @@ const Header = () => {
   const { motions } = Utils;
   return (
     <header
-      className={`flex-row-between sticky top-0 items-center max-w-8xl mx-auto z-20 p-5 ${
+      className={`flex-row-between sticky top-0 items-center w-full max-w-8xl mx-auto z-20 p-5 ${
         isOpen ? "border-b-orange-500 border-b-2 bg-gray-900" : "bg-inherit "
       }`}
     >
