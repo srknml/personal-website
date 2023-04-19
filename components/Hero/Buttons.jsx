@@ -23,10 +23,10 @@ const Buttons = () => {
       }}
       className="flex flex-row justify-center p-2 w-full mx-auto  "
     >
-      <button className=" w-1/4 border-2 border-transparent bg-[#e69417] hover:bg-transparent hover:border-[#e69417] hover:border-2 hover:text-white text-gray-950    font-bold m-1 py-2 px-5 rounded-xl">
+      <button className="md-max:w-1/2  w-1/4 border-2 border-transparent bg-[#e69417] hover:bg-transparent hover:border-[#e69417] hover:border-2 hover:text-white text-gray-950    font-bold m-1 py-2 px-5 rounded-xl">
         Button
       </button>
-      <button className=" w-1/4 border-2 border-gray-800  hover:border-[#e69417] hover:border-2 hover:text-white text-[#e69417] font-bold m-1 py-2 px-5 rounded-lg">
+      <button className=" md-max:w-1/2 w-1/4 border-2 border-gray-800  hover:border-[#e69417] hover:border-2 hover:text-white text-[#e69417] font-bold m-1 py-2 px-5 rounded-lg">
         Button
       </button>
     </motion.div>
