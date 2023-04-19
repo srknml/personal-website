@@ -17,6 +17,16 @@ html {
     justify-content: space-between;
     align-items: self-start;
   }
+  .border-rad{
+    border-radius: 0.5rem;
+
+  }
+  .Fflex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: flex-start; */
+  }
   .flex-col{
     display: flex;
     flex-direction: column;
