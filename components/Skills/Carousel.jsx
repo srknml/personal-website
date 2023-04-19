@@ -10,7 +10,7 @@ const Slide = ({ title, skills, direction, duration }) => {
   const [isPlaying, setIsPlaying] = React.useState(true);
 
   return (
-    <div className="w-2/3 m-auto flex flex-col justify-center">
+    <div className=" w-full sm:w-2/3 m-auto flex flex-col justify-center">
       <motion.h2
         // transition={{ duration: 2, ease: "linear", repeat: Infinity }}
         // initial={{ x: 250 }}

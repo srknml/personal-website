@@ -10,7 +10,7 @@ const Imagebox = () => {
     <motion.div
       initial={motions.leftToRight.initial}
       animate={motions.leftToRight.animate}
-      className=" w-2/3  md:w-1/3"
+      className=" w-1/2   md:w-1/3"
     >
       <Image
         className="border-rad"

@@ -17,9 +17,10 @@ export default function Home() {
       <Hero />
       <Skills />
 
-      <div id="resume" className="flex flex-col flex-grow custom-h align-middle  justify-between border-red-400 border-2 w-full md:w-2/3 mx-auto" >
-
-      </div>
+      <div
+        id="resume"
+        className="flex flex-col flex-grow custom-h align-middle  justify-between border-red-400 border-2 w-full md:w-2/3 mx-auto"
+      ></div>
     </div>
   );
 }
