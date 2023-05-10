@@ -1,6 +1,8 @@
 import React from "react";
 import { Fragment, useState } from "react";
-import AccardionItem from "./AccardionItem";
+import AccordionLayout from "./AccordionLayout";
+import AccordionBox from "./AccardionItem";
+import ExperienceTitle from "./ExperienceTitle";
 
 const Experiences = () => {
   const [open, setOpen] = useState(1);
@@ -18,27 +20,24 @@ const Experiences = () => {
       </h1>
       {/* Whitespaces will be added after Job Title */}
       <div className="border-green-400 border-2 flex flex-grow flex-col w-full justify-start ">
-        <div className="flex flex-col flex-grow   justify-center align-top w-full">
-          <span className="flex flex-row border-slate-700 border-b-2 pb-1  w-full justify-start">
-            <h2> Kraft Heinz - Data Analyst / </h2>
-            <h2 className="text-xs italic   " style={{ lineHeight: 2 }}>
-              {" "}
-              July 2021 - Present{" "}
-            </h2>{" "}
-          </span>
-        </div>
-        
-        <AccardionItem/>
-
-        <div className="flex flex-col flex-grow  justify-center align-top w-full">
-          <span className="flex flex-row  border-slate-700 border-b-2 pb-1 w-full justify-start ">
-            <h2> Frachtbox - Key Account Executive - </h2>
-            <h2 className="text-xs italic  " style={{ lineHeight: 2 }}>
-              {" "}
-              September 2020 - February 2021{" "}
-            </h2>{" "}
-          </span>
-        </div>
+        <AccordionLayout>
+          <AccordionBox
+            title={
+              <ExperienceTitle
+                jobTitle={"Kraft Heinz - Data Analyst - "}
+                date={"July 2021 - Present"}
+              />
+            }
+          />
+          <AccordionBox
+            title={
+              <ExperienceTitle
+                jobTitle={"Frachtbox - Key Account Executive - "}
+                date={"September 2020 - February 2021"}
+              />
+            }
+          />
+        </AccordionLayout>
       </div>
     </div>
   );

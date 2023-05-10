@@ -1,30 +1,34 @@
 import React, { useState } from "react";
 import AccordionLayout from "./AccordionLayout";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
-const Accordion = () => {
-  const [activeIndex, setActiveIndex] = useState(2);
-
+const AccordionBox = ({title}) => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <AccordionLayout
-        title="Accordion 1"
-        index={1}
-        activeIndex={activeIndex}
-        setActiveIndex={setActiveIndex}
-      >
-        This is Accordion 1 Content
-      </AccordionLayout>
+    <AccordionItem className="flex flex-col flex-grow  justify-center align-top w-full" >
+      <h2>
+        <AccordionButton>
+          <AccordionIcon />
 
-      <AccordionLayout
-        title="Accordion 2"
-        index={2}
-        activeIndex={activeIndex}
-        setActiveIndex={setActiveIndex}
-      >
-        This is Accordion 2 Content
-      </AccordionLayout>
-    </div>
+          <Box as="span" textAlign="left">
+            {title}
+          </Box>
+        </AccordionButton>
+      </h2>
+      <AccordionPanel pb={4}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </AccordionPanel>
+    </AccordionItem>
   );
 };
 
-export default Accordion;
+export default AccordionBox;
