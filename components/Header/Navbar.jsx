@@ -8,16 +8,12 @@ const Routes = [
     path: "#",
   },
   {
-    name: "About Me",
-    path: "#aboutme",
-  },
-  {
     name: "Skills and Tools",
     path: "#skills",
   },
   {
-    name: "Resume",
-    path: "#resume",
+    name: "Experiences",
+    path: "#experiences",
   },
   {
     name: "Contact",

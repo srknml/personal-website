@@ -8,7 +8,7 @@ const user = {
     github: "https://github.com/srknml",
     linkedin: "https://www.linkedin.com/in/serkan-nemli-b9a0001b6/",
     location: "Istanbul, Turkey",
-    resume: "https://serkannemli.com/resume.pdf",
+    resume: "https://docs.google.com/document/d/e/2PACX-1vTcTgw8hrDRzvzu_E8qisaA9tea33B6104PnywlrK1SG9tjx1-g8Pwc5yePtsd56BErV8-svFIegFWm/pub",
 
   },
   skills: {
