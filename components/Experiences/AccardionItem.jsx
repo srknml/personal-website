@@ -11,7 +11,7 @@ import { Box } from "@chakra-ui/react";
 
 const AccordionBox = ({ title, date }) => {
   return (
-    <AccordionItem className="flex flex-col flex-grow  p-2 my-2 border-orange-700 border-2 justify-center align-top w-full">
+    <AccordionItem className="flex flex-col flex-grow p-2 text-lg justify-center align-top w-full">
       {({ isExpanded }) => (
         console.log(isExpanded),
         (
@@ -19,12 +19,12 @@ const AccordionBox = ({ title, date }) => {
             <h2
               className={
                 (isExpanded
-                  ? " shadow-sm shadow-slate-800  "
-                  : "shadow-sm shadow-slate-700 ") +
-                " p-2 w-full hover:bg-gray-900"
+                  ? " shadow-sm shadow-[#1623338e]  "
+                  : " ") +
+                "py-4 px-2 w-full bg-[#06142462] hover:bg-[#0c15209a]"
               }
             >
-              <AccordionButton>
+              <AccordionButton className="w-full">
                 <AccordionIcon />
 
                 <Box pl={8} as="span" textAlign="left">
@@ -32,21 +32,21 @@ const AccordionBox = ({ title, date }) => {
                 </Box>
               </AccordionButton>
             </h2>
-            <AccordionPanel className="p-2">
-              <ul>
-                <li>
+            <AccordionPanel className="p-2 mt-2 text-base inline-block w-full bg-[#0b1c3182] ">
+              <div className=" w-full" >
+                <div className="p-1" >
+                  Developed a web application for the company’s clients to track
+                  their shipments and invoices.aaaaa
+                </div>
+                <div>
                   Developed a web application for the company’s clients to track
                   their shipments and invoices.
-                </li>
-                <li>
+                </div>
+                <div>
                   Developed a web application for the company’s clients to track
                   their shipments and invoices.
-                </li>
-                <li>
-                  Developed a web application for the company’s clients to track
-                  their shipments and invoices.
-                </li>
-              </ul>
+                </div>
+              </div>
             </AccordionPanel>
           </>
         )

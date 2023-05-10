@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AccordionLayout from "./AccordionLayout";
 import AccordionBox from "./AccardionItem";
 import ExperienceTitle from "./ExperienceTitle";
 
 const Experiences = () => {
+  useEffect(() => {
+    document.querySelectorAll("div.chakra-collapse").forEach((element) => {
+      element.classList.add("w-full");
+    });
+  }, []);
+
   return (
     <div
       id="experiences"
-      className="flex flex-col flex-grow custom-h align-middle  justify-between border-red-400 border-2 w-full md:w-2/3 mx-auto "
+      className="flex flex-col flex-grow custom-h align-middle  justify-between mock-border w-full md:w-4/5 mx-auto "
     >
-      <h1 className="block text-center w-full p-2 border-slate-700 border-b-2">
+      <h1 className="text-bold my-2 text-2xl block text-center w-full md:w-full mx-auto py-4 border-gray-500 border-b-2  ">
         Experiences
       </h1>
       {/* Whitespaces will be added after Job Title */}
-      <div className="border-green-400 border-2 flex flex-grow flex-col w-full justify-start ">
+      <div className=" flex flex-grow flex-col w-full justify-start ">
         <AccordionLayout>
           <AccordionBox
             title={"Kraft Heinz - Data Analyst "}
