@@ -1,15 +1,9 @@
 import React from "react";
-import { Fragment, useState } from "react";
 import AccordionLayout from "./AccordionLayout";
 import AccordionBox from "./AccardionItem";
 import ExperienceTitle from "./ExperienceTitle";
 
 const Experiences = () => {
-  const [open, setOpen] = useState(1);
-
-  const handleOpen = (value) => {
-    setOpen(open === value ? 0 : value);
-  };
   return (
     <div
       id="experiences"
@@ -22,20 +16,12 @@ const Experiences = () => {
       <div className="border-green-400 border-2 flex flex-grow flex-col w-full justify-start ">
         <AccordionLayout>
           <AccordionBox
-            title={
-              <ExperienceTitle
-                jobTitle={"Kraft Heinz - Data Analyst - "}
-                date={"July 2021 - Present"}
-              />
-            }
+            title={"Kraft Heinz - Data Analyst "}
+            date={"July 2021 - Present"}
           />
           <AccordionBox
-            title={
-              <ExperienceTitle
-                jobTitle={"Frachtbox - Key Account Executive - "}
-                date={"September 2020 - February 2021"}
-              />
-            }
+            title={"Frachtbox - Key Account Executive "}
+            date={"September 2020 - February 2021"}
           />
         </AccordionLayout>
       </div>
