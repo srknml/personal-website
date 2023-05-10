@@ -24,6 +24,11 @@ html {
   .custom-h {
     height: calc(100vh - 90px);
   }
+  .mock-border{
+    /* border: 2px solid tomato; */
+    /* background-color: #081b30; */
+
+  }
   .border-rad {
     border-radius: 0.5rem;
   }
