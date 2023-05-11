@@ -20,19 +20,38 @@ const Slide = ({ title, skills, direction, duration }) => {
         {title}
       </motion.h2>
       <div
-        onMouseEnter={() => {
-          setIsPlaying(false);
-        }}
-        onMouseLeave={() => {
-          setIsPlaying(true);
-        }}
+        // onMouseEnter={() => {
+        //   setIsPlaying(false);
+        // }}
+        // onMouseLeave={() => {
+        //   setIsPlaying(true);
+        // }}
         className="w-full pb-1 flex flex-1  border-orange-400 border-b-2 border-opacity-60 "
       >
         <Ticker duration={duration} direction={direction} isPlaying={isPlaying}>
           {skills.map((skill) => {
             return (
-              <div className=" bg-gray-800 p-2 border-rad mx-1 " key={skill.id}>
-                {skill.icon}
+              <div
+                onMouseEnter={(e) => {
+                  setIsPlaying(false);
+                  skill.x = false;
+                }}
+                onMouseLeave={(e) => {
+                  setIsPlaying(true);
+                  skill.x = true;
+                }}
+                className={
+                  isPlaying
+                    ? " bg-[#0b1c3182] p-4 border-rad mx-2 "
+                    : " bg-[#0b1c3182] p-4 border-rad mx-2"
+                }
+                key={skill.id}
+              >
+                {skill.x ? (
+                  skill.icon
+                ) : (
+                  <div className="p-2 border-rad mx-2 ">{skill.name}</div>
+                )}
               </div>
             );
           })}
