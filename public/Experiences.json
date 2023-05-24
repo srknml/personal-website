@@ -1,0 +1,37 @@
+[
+  {
+    "title": "ERP - SDET ",
+    "date": "September 2022 - Present",
+    "points": [
+      "Developed and maintained end-to-end automated test framework using BDD and DDT, provided actionable and reliable test reports and implemented automated regression, smoke, and functional test suites, reducing the time spent on manual testing and enabling faster identification of defects.",
+      "Conducted comprehensive API testing for 50+ endpoints, ensuring data integrity, response codes, and database adherence.",
+      "Conducted comprehensive database testing across 100+ tables, performed CRUD operations on various data entities to validate the system's data manipulation capabilities and ensure proper functioning.",
+      "Worked in an agile environment with daily stand-ups, kept track of user stories, test plans, bugs in JIRA and conducted agile ceremony meetings.",
+      "Implemented automated testing within the CI/CD pipelines using Jenkins and collaborated with teams to analyze daily reports.",
+      "Stayed updated with the latest testing methodologies, tools, and industry trends, proactively seeking opportunities for professional growth and introducing innovative testing approaches to the team."
+    ]
+  },
+  {
+    "title": "Kraft Heinz - Data Analyst ",
+    "date": "July 2021 - Present",
+    "points": [
+      "Develop, design, and maintain more than 15 reports on a recurring basis, providing insightful analysis and actionable recommendations to support various departments, with a particular focus on the retail sales team.",
+      "Collaborate with stakeholders to understand their specific reporting requirements and create ad-hoc reports as needed, ensuring the timely delivery of accurate and relevant information to facilitate critical decision-making processes.",
+      "Connect Excel reports with SQL Server using OLAP and ODBC connections to extract, transform, and load data for analysis, applying SQL queries and advanced Excel functions to manipulate and analyze large datasets efficiently.",
+      "Utilize Excel Macros and Power Query to automate repetitive tasks and streamline report generation processes, resulting in significant time savings and improved efficiency.",
+      "Leverage expertise in React and other web technologies to create interactive and visually appealing web pages for additional functionality and enhanced visualization of reports.",
+      "Collaborate with various departments, including sales, marketing, finance, and operations, to understand their analytical needs and provide data-driven insights, working closely with stakeholders to define key performance indicators (KPIs) and develop relevant dashboards and reports."
+    ]
+  },
+  {
+    "title": "Frachtbox - Key Account Executive ",
+    "date": "September 2020 - February 2021",
+    "points": [
+      "Developed and managed key accounts by establishing and nurturing relationships with exporters and importers.",
+      "Conducted market research to identify potential clients and expand the company's client base.",
+      "Negotiated and closed business contracts, resulting in a significant increase in revenue.",
+      "Collaborated with internal teams to ensure seamless execution of trade operations and delivery of services.",
+      "Coordinated logistics and transportation services for clients' shipments, including shipping, customs clearance, and delivery."
+    ]
+  }
+]

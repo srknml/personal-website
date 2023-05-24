@@ -8,8 +8,9 @@ import {
   AccordionIcon,
 } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
+import ExperiencePoint from "./ExperiencePoint";
 
-const AccordionBox = ({ title, date }) => {
+const AccordionBox = ({ title, date,points }) => {
   return (
     <AccordionItem className="flex flex-col flex-grow p-2 text-lg justify-center align-top w-full">
       {({ isExpanded }) => (
@@ -33,20 +34,7 @@ const AccordionBox = ({ title, date }) => {
               </AccordionButton>
             </h2>
             <AccordionPanel className="p-2 mt-2 text-base inline-block w-full bg-[#0b1c3182] ">
-              <div className=" w-full" >
-                <div className="p-1" >
-                  Developed a web application for the company’s clients to track
-                  their shipments and invoices.aaaaa
-                </div>
-                <div>
-                  Developed a web application for the company’s clients to track
-                  their shipments and invoices.
-                </div>
-                <div>
-                  Developed a web application for the company’s clients to track
-                  their shipments and invoices.
-                </div>
-              </div>
+             <ExperiencePoint points= {points} />
             </AccordionPanel>
           </>
         )

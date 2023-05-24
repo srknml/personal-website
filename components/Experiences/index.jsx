@@ -3,6 +3,8 @@ import AccordionLayout from "./AccordionLayout";
 import AccordionBox from "./AccardionItem";
 import ExperienceTitle from "./ExperienceTitle";
 
+import ExperiencesData from "../../public/Experiences.json";
+
 const Experiences = () => {
   useEffect(() => {
     document.querySelectorAll("div.chakra-collapse").forEach((element) => {
@@ -21,14 +23,17 @@ const Experiences = () => {
       {/* Whitespaces will be added after Job Title */}
       <div className=" flex flex-grow flex-col w-full justify-start ">
         <AccordionLayout>
-          <AccordionBox
-            title={"Kraft Heinz - Data Analyst "}
-            date={"July 2021 - Present"}
-          />
-          <AccordionBox
-            title={"Frachtbox - Key Account Executive "}
-            date={"September 2020 - February 2021"}
-          />
+          {ExperiencesData &&
+            ExperiencesData.map((ExperienceData, i) => {
+              return (
+                <AccordionBox
+                  key={i}
+                  title={ExperienceData.title}
+                  date={ExperienceData.date}
+                  points={ExperienceData.points}
+                />
+              );
+            })}
         </AccordionLayout>
       </div>
     </div>
