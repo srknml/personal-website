@@ -5,6 +5,7 @@ import React from "react";
 import Hero from "../components/Hero/Hero";
 import Skills from "../components/Skills/Skills";
 import Experiences from "../components/Experiences";
+import ThemeSwitch from "../components/ThemeSwitch";
 
 export default function Home() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -21,15 +22,15 @@ export default function Home() {
       </Head>
 
       <Header />
-      <nav
+      {/* <nav
         onClick={toggleDarkMode}
         className={`grid grid-cols-2 w-full place-content-between items-center  ${
           darkMode ? "dark" : "bg-white text-black"
         } `}
-      >
-        <h4>Resume</h4>
-        <button>Switch</button>
-      </nav>
+      > */}
+        {/* <h4>Resume</h4> */}
+        <ThemeSwitch/>
+      {/* </nav> */}
       <Hero />
       <Skills />
       <Experiences />
