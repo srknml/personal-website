@@ -1,7 +1,8 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import src from '../public/image.jpg'
-
+import image from "../public/image.jpg";
+import Image from "next/image";
+import { FaAws, FaReact, FaHtml5 } from "react-icons/fa";
 const Switch = ({ isOn, ...rest }) => {
   // initialize the customClassName according to the
   // state of the "isOn" using ternary operator
@@ -9,12 +10,11 @@ const Switch = ({ isOn, ...rest }) => {
 
   // initialize the src according to the
   // state of the "isOn" using ternary operator
-  const src = isOn ? "Toggle 1st Image link" : "Toggle 2nd Image link";
 
   return (
-    <motion.div animate className={customClassName} {...rest}>
-      <motion.div animate>
-        <img src={src} />
+    <motion.div animate className={`${customClassName} `} {...rest}>
+      <motion.div animate className="flex flex-row justify-center">
+        <Image src={isOn ? image : image} alt={"asd"} />
       </motion.div>
     </motion.div>
   );
