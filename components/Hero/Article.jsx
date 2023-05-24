@@ -14,11 +14,14 @@ const Article = () => {
         Hero Title
       </h1>
       <p className="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptate, quod, quia, voluptates quae voluptatibus quibusdam
-        accusantium quas quidem nemo voluptatum. Quisquam, quae. Quisquam
-        voluptate, quod, quia, voluptates quae voluptatibuadadaada asdad asda
-        asdas
+        Highly motivated Software Automation Tester with hands-on experience in
+        manual and automation testing of web applications, including database
+        and API, in agile environments. Proven ability in design and building
+        automation frameworks by using Object Oriented Programming principles.
+        Disciplined and capable of managing heavy workloads while maintaining
+        attention to detail. Self-driven learner consistently seeking growth
+        opportunities. Ready to contribute to the success of software projects
+        with a strong focus on communication and teamwork.
       </p>
     </motion.article>
   );

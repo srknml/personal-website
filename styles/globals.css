@@ -9,6 +9,14 @@ html {
   box-sizing: border-box;
   scroll-padding-top: 89px;
 }
+root {
+  --clr-bg-dark: #1f2937; /* gray-800 */
+  --clr-bg-light: #fafafa; /* zinc-50 */
+
+  --clr-text-dark: #1f2937; /* gray-200 */
+  --clr-text-light: #fafafa; /* zinc-50 */
+}
+
 /*  #ffc063 - pale orange */
 /*  #e69417 - main orange */
 
@@ -21,13 +29,19 @@ html {
     justify-content: space-between;
     align-items: self-start;
   }
+  .dark {
+    @apply bg-gray-950 text-white;
+  }
+
+  .light {
+    @apply bg-white text-black;
+  }
   .custom-h {
     height: calc(100vh - 90px);
   }
-  .mock-border{
+  .mock-border {
     /* border: 2px solid tomato; */
     /* background-color: #081b30; */
-
   }
   .border-rad {
     border-radius: 0.5rem;

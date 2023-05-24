@@ -21,7 +21,7 @@ const Experiences = () => {
         Experiences
       </h1>
       {/* Whitespaces will be added after Job Title */}
-      <div className=" flex flex-grow flex-col w-full justify-start ">
+      <div className=" flex flex-grow flex-col w-full justify-start  ">
         <AccordionLayout>
           {ExperiencesData &&
             ExperiencesData.map((ExperienceData, i) => {

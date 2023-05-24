@@ -10,7 +10,7 @@ import {
 import { Box } from "@chakra-ui/react";
 import ExperiencePoint from "./ExperiencePoint";
 
-const AccordionBox = ({ title, date,points }) => {
+const AccordionBox = ({ title, date, points }) => {
   return (
     <AccordionItem className="flex flex-col flex-grow p-2 text-lg justify-center align-top w-full">
       {({ isExpanded }) => (
@@ -19,9 +19,7 @@ const AccordionBox = ({ title, date,points }) => {
           <>
             <h2
               className={
-                (isExpanded
-                  ? " shadow-sm shadow-[#1623338e]  "
-                  : " ") +
+                (isExpanded ? " shadow-sm shadow-[#1623338e]  " : " ") +
                 "py-4 px-2 w-full bg-[#06142462] hover:bg-[#0c15209a]"
               }
             >
@@ -34,7 +32,7 @@ const AccordionBox = ({ title, date,points }) => {
               </AccordionButton>
             </h2>
             <AccordionPanel className="p-2 mt-2 text-base inline-block w-full bg-[#0b1c3182] ">
-             <ExperiencePoint points= {points} />
+              <ExperiencePoint points={points} />
             </AccordionPanel>
           </>
         )
