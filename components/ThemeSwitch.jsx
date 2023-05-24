@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import image from "../public/image.jpg";
 import Image from "next/image";
+import { FiMoon, FiSun } from "react-icons/fi";
+
 const Switch = ({ isOn, ...rest }) => {
   const customClassName = `toggleSwitch ${isOn ? "on" : "off"}`;
 
   return (
     <motion.div animate className={`${customClassName} `} {...rest}>
-      <motion.div animate className="flex flex-row justify-center">
-        <Image src={isOn ? image : image} alt={"asd"} />
+      <motion.div animate className="">
+        {isOn ? <FiMoon size={18} /> : <FiSun color="orange" size={18} />}
       </motion.div>
     </motion.div>
   );
