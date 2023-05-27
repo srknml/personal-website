@@ -1,19 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-  --dark-bg: #030712;
-  --light-bg: #ffffff;
+:root {
+	--dark-bg: #030712;
+	--light-bg: #ffffff;
 }
 html {
-  scroll-behavior: smooth;
-  background-color: var(--dark-bg);
-  color: white;
-  box-sizing: border-box;
-  scroll-padding-top: 89px;
+	scroll-behavior: smooth;
+	/* background-color: var(--light-bg);
+  color: white; */
+	box-sizing: border-box;
+	scroll-padding-top: 89px;
 }
-/* conver rgb(3, 7, 18) to hex */
-/* #030712 */
 
 /*  #ffc063 - pale orange */
 /*  #e69417 - main orange */
@@ -21,95 +19,72 @@ html {
 /* define color variable */
 
 @layer components {
-  .flex-row-between {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: self-start;
-  }
-  .dark {
-    @apply bg-gray-950 text-white;
-  }
+	.flex-row-between {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: self-start;
+	}
+	.dark {
+		@apply bg-gray-950 text-white;
+	}
 
-  .light {
-    @apply bg-white text-black;
-  }
-  .custom-h {
-    height: calc(100vh - 90px);
-  }
-  .mock-border {
-    /* border: 2px solid tomato; */
-    /* background-color: #081b30; */
-  }
-  .border-rad {
-    border-radius: 0.5rem;
-  }
-  .flex-row-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: flex-start; */
-  }
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-items: flex-start;
-  }
-  .nav-btn {
-    /* font-semibold text-white mx-2 hover:underline */
-    font-weight: 600;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-  .nav-btn:hover {
-    /* change text color to orange */
-    color: #e69417;
-  }
+	.light {
+		@apply bg-white text-black;
+	}
+	.custom-h {
+		height: calc(100vh - 90px);
+	}
+	.border-rad {
+		border-radius: 0.5rem;
+	}
+	.flex-row-center {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.flex-col {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-items: flex-start;
+	}
+	.nav-btn {
+		font-weight: 600;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+	.nav-btn:hover {
+		color: #e69417;
+	}
 
-  .orange-hover:hover {
-    /* change text color to orange */
-    color: #e69417;
-  }
+	.orange-hover:hover {
+		color: #e69417;
+	}
 
-  .toggleSwitch {
-    width: 60px;
-    height: 32px;
-    border-radius: 25px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    z-index: 2;
-  }
+	.toggleSwitch {
+		width: 60px;
+		height: 32px;
+		border-radius: 25px;
+		padding: 8px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		z-index: 2;
+	}
 
-  /* CSS for switch when "on"*/
-  .toggleSwitch.on {
-    background-color: rgb(33, 38, 52);
-    justify-content: flex-end;
-    /* for smooth transition*/
-    transition: 0.5s ease-in-out;
-  }
+	/* CSS for switch when "on"*/
+	.toggleSwitch.on {
+		background-color: rgb(33, 38, 52);
+		justify-content: flex-end;
+		/* for smooth transition*/
+		transition: 0.5s ease-in-out;
+	}
 
-  /*CSS for switch when "off"*/
-  .toggleSwitch.off {
-    background-color: #f1f1f1;
-    justify-content: flex-start;
-    transition: 0.5s ease-in-out;
-  }
-
-  /* .toggleSwitch div {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-  }
-
-  img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-  } */
-
-  @layer components {
-  }
+	/*CSS for switch when "off"*/
+	.toggleSwitch.off {
+		background-color: #f1f1f1;
+		justify-content: flex-start;
+		transition: 0.5s ease-in-out;
+	}
 }

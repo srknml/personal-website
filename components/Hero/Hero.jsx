@@ -2,11 +2,11 @@ import React from "react";
 import Imagebox from "./Imagebox";
 import Article from "./Article";
 import Buttons from "./Buttons";
-import {useTheme} from '../../context/Theme'
+import { useTheme } from '../../context/Theme'
 
 const Hero = () => {
 
-  const {isDark} = useTheme()
+  const { isDark } = useTheme()
 
   return (
     <section
