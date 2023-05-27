@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
+import ThemeSwitch from "../ThemeSwitch";
 
 const items = [
   {
@@ -25,28 +26,29 @@ const SocialIcons = ({ motions }) => {
     <motion.div
       initial={motions.rightToLeft.initial}
       animate={motions.rightToLeft.animate}
-      className="flex-row-between min-h-max  md:flex md:justify-between"
+      className="flex-row-between justify-between items-center min-h-max  md:flex md:justify-between md:items-center"
     >
       <SocialIcon
         url="https://www.linkedin.com/in/serkan-nemli-b9a0001b6/"
         fgColor="white"
         bgColor="transparent"
-        className="cursor-pointer"
-        o
+        className="cursor-pointer md-max:!w-10 md-max:!h-10"
       />
       <SocialIcon
         url="https://github.com/srknml"
-        className="cursor-pointer"
+        className="cursor-pointer md-max:!w-10 md-max:!h-10"
         fgColor="white"
         bgColor="transparent"
       />
       <SocialIcon
-        className="cursor-pointer"
+        // style={{ width: "2rem", height: "2rem" }}
+        className="cursor-pointer md-max:!w-10 md-max:!h-10"
         network="email"
         url="mailto:contact@serkannemli.com"
         fgColor="white"
         bgColor="transparent"
       />
+      <ThemeSwitch />
     </motion.div>
   );
 };

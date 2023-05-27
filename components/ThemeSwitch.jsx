@@ -5,12 +5,12 @@ import Image from "next/image";
 import { FiMoon, FiSun } from "react-icons/fi";
 
 const Switch = ({ isOn, ...rest }) => {
-  const customClassName = `toggleSwitch ${isOn ? "on" : "off"}`;
+  const customClassName = `toggleSwitch ${isOn ? "on" : "off"} md-max:!w-12 md-max:!h-7`;
 
   return (
     <motion.div animate className={`${customClassName} `} {...rest}>
       <motion.div animate className="">
-        {isOn ? <FiMoon size={18} /> : <FiSun color="orange" size={18} />}
+        {isOn ? <FiMoon size={18} /> : <FiSun color="orange" size={`14`} />}
       </motion.div>
     </motion.div>
   );
