@@ -135,13 +135,12 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className={` ${isDark ? "dark" : "light"} flex flex-col  custom-h align-middle  justify-between mock-border w-full md:w-1/2 mx-auto"`}
+      className={` ${isDark ? "dark" : "light"} flex flex-col align-middle  justify-between mock-border mb-16 w-full md:w-2/3 "`}
     >
       <h1 className="font-bold text-2xl block text-center w-full md:w-full mx-auto py-4 border-gray-500 border-b-2  ">
         Skills and Tools
       </h1>
       <Carousel skills={skills} title={"Colors"} duration={20} direction={1} />
-      <Carousel skills={skills} title={"Colors"} duration={10} />
       <Carousel skills={skills} title={"Colors"} duration={5} direction={1} />
     </div>
   );

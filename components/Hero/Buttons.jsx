@@ -33,15 +33,15 @@ const Buttons = () => {
           rel="noopener noreferrer"
           target="_blank"
           className={`${isDark ?
-            " text-gray-950 hover:text-white  bg-[#e69417] hover:bg-transparent hover:border-[#e69417] hover:border-2 "
-            : "dark hover:light  hover:border-gray-800 hover:border-2 "}
+            " text-slate-950 hover:text-white  bg-[#e69417] hover:bg-transparent hover:border-[#e69417] hover:border-2 "
+            : "dark hover:light  hover:border-slate-800 hover:border-2 "}
            md-max:w-1/2 text-center w-1/4 border-2 border-transparent  font-bold m-1 py-2 px-5 rounded-xl`}
         >
           Resume
         </a>
       </Link>
       <button onClick={() => Router.push('mailto:contact@serkannemli.com')}
-        className={` ${isDark ? " border-[#e69417] border-2 hover:border-[#e69417]" : " bg-white text-gray-500 border-1  hover:border-[#867d6f]"} md-max:w-1/2 w-1/4 font-bold m-1 py-2 px-5 rounded-lg`}>
+        className={` ${isDark ? " border-[#e69417] border-1 hover:border-[#f5b95f]" : " bg-white text-slate-600 hover:text-slate-800 border-1  hover:border-[#867d6f]"} md-max:w-1/2 w-1/4 font-bold m-1 py-2 px-5 rounded-lg`}>
         Contact
       </button>
     </motion.div>
