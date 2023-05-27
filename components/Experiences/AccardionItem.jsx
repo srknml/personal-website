@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import AccordionLayout from "./AccordionLayout";
+import React from "react";
 import {
-  Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
@@ -9,8 +7,13 @@ import {
 } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
 import ExperiencePoint from "./ExperiencePoint";
+import { useTheme } from '../../context/Theme'
+
 
 const AccordionBox = ({ title, date, points }) => {
+  const { isDark } = useTheme()
+
+  
   return (
     <AccordionItem className="flex flex-col flex-grow p-2 text-lg justify-center align-top w-full">
       {({ isExpanded }) => (
@@ -19,7 +22,7 @@ const AccordionBox = ({ title, date, points }) => {
             <h2
               className={
                 (isExpanded ? " shadow-sm shadow-[#1623338e]  " : " ") +
-                "py-4 px-2 w-full bg-[#06142462] hover:bg-[#0c15209a]"
+                "py-4 px-2 w-full bg-[#06142473] hover:bg-[#052144]"
               }
             >
               <AccordionButton className="w-full">
@@ -30,7 +33,7 @@ const AccordionBox = ({ title, date, points }) => {
                 </Box>
               </AccordionButton>
             </h2>
-            <AccordionPanel className="p-2 mt-2 text-base inline-block w-full bg-[#0b1c3182] ">
+            <AccordionPanel className="p-2 mt-2 text-base inline-block w-full bg-[#24467044] ">
               <ExperiencePoint points={points} />
             </AccordionPanel>
           </>
