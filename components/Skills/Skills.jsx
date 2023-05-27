@@ -137,7 +137,7 @@ const Skills = () => {
       id="skills"
       className={` ${isDark ? "dark" : "light"} flex flex-col  custom-h align-middle  justify-between mock-border w-full md:w-1/2 mx-auto"`}
     >
-      <h1 className="text-bold  text-2xl block text-center w-full md:w-full mx-auto py-4 border-gray-500 border-b-2  ">
+      <h1 className="font-bold text-2xl block text-center w-full md:w-full mx-auto py-4 border-gray-500 border-b-2  ">
         Skills and Tools
       </h1>
       <Carousel skills={skills} title={"Colors"} duration={20} direction={1} />
