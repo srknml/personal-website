@@ -1,9 +1,7 @@
-import React, { useState, useEffect, useContext } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import image from "../public/image.jpg";
-import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
 import { FiMoon, FiSun } from "react-icons/fi";
-import { ThemeProvider, useTheme } from '../context/Theme';
+import { useTheme } from '../context/Theme';
 
 
 const Switch = ({ isDark, ...rest }) => {

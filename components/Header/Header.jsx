@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header
-      className={` ${isDark ? "dark" : "light"} flex-row-between sticky top-0 items-center w-full max-w-8xl mx-auto z-20 p-5 shadow-sm shadow-slate-700  ${isOpen ? "border-b-orange-500 border-b-2 bg-gray-900" : ""
+      className={` ${isDark ? "dark" : "light"} flex-row-between sticky top-0 w-full max-w-8xl mx-auto z-20 p-5 shadow-sm shadow-slate-700  ${isOpen ? "border-b-orange-500 border-b-2 items-start " : "items-center"
         }`}
     >
       <Navbar motions={motions} isDark={isDark} isOpen={isOpen} setIsOpen={setIsOpen}>

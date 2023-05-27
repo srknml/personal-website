@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Hamburger = ({setIsOpen,isOpen}) => {
+const Hamburger = ({setIsOpen,isOpen,isDark}) => {
   return (
     <div className="block md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center px-3 py-2 rounded text-white hover:text-white"
+            className={`${isDark ? "dark" : "light"} flex items-center px-3 py-2 rounded`}
           >
             <svg
               className={`fill-current h-4 w-4 ${isOpen ? "hidden" : "block"}`}
