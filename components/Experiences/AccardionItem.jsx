@@ -14,7 +14,6 @@ const AccordionBox = ({ title, date, points }) => {
   return (
     <AccordionItem className="flex flex-col flex-grow p-2 text-lg justify-center align-top w-full">
       {({ isExpanded }) => (
-        console.log(isExpanded),
         (
           <>
             <h2

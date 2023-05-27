@@ -34,7 +34,7 @@ const Navbar = (props) => {
     >
       {props.children}
       <ul
-        className={`flex-row-between md:flex md:items-center md:w-auto ${
+        className={` ${props.isDark ? "dark" : "light"} flex-row-between md:flex md:items-center md:w-auto ${
           isOpen ? "flex-col" : "hidden"
         } `}
       >

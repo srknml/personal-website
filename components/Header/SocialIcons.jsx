@@ -21,7 +21,7 @@ const items = [
   },
 ];
 
-const SocialIcons = ({ motions }) => {
+const SocialIcons = ({ motions,isDark }) => {
   return (
     <motion.div
       initial={motions.rightToLeft.initial}
@@ -30,14 +30,14 @@ const SocialIcons = ({ motions }) => {
     >
       <SocialIcon
         url="https://www.linkedin.com/in/serkan-nemli-b9a0001b6/"
-        fgColor="white"
+        fgColor={isDark ? "white" : "black"}
         bgColor="transparent"
         className="cursor-pointer md-max:!w-10 md-max:!h-10"
       />
       <SocialIcon
         url="https://github.com/srknml"
         className="cursor-pointer md-max:!w-10 md-max:!h-10"
-        fgColor="white"
+        fgColor={isDark ? "white" : "black"}
         bgColor="transparent"
       />
       <SocialIcon
@@ -45,7 +45,7 @@ const SocialIcons = ({ motions }) => {
         className="cursor-pointer md-max:!w-10 md-max:!h-10"
         network="email"
         url="mailto:contact@serkannemli.com"
-        fgColor="white"
+        fgColor={isDark ? "white" : "black"}
         bgColor="transparent"
       />
       <ThemeSwitch />

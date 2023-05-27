@@ -1,7 +1,6 @@
 import React from "react";
 
 const ExperiencePoint = ({ points }) => {
-  console.log(points);
   return (
     <ul className=" w-full">
       {points &&

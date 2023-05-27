@@ -1,14 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root{
+  --dark-bg: #030712;
+  --light-bg: #ffffff;
+}
 html {
   scroll-behavior: smooth;
-  background-color: rgb(3, 7, 18);
+  background-color: var(--dark-bg);
   color: white;
   box-sizing: border-box;
   scroll-padding-top: 89px;
 }
+/* conver rgb(3, 7, 18) to hex */
+/* #030712 */
 
 /*  #ffc063 - pale orange */
 /*  #e69417 - main orange */
@@ -39,7 +44,7 @@ html {
   .border-rad {
     border-radius: 0.5rem;
   }
-  .Fflex-row-center {
+  .flex-row-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -54,7 +59,6 @@ html {
   .nav-btn {
     /* font-semibold text-white mx-2 hover:underline */
     font-weight: 600;
-    color: #fff;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -89,7 +93,7 @@ html {
 
   /*CSS for switch when "off"*/
   .toggleSwitch.off {
-    background-color: #ffffff;
+    background-color: #f1f1f1;
     justify-content: flex-start;
     transition: 0.5s ease-in-out;
   }
