@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-	--dark-bg: #030712;
-	--light-bg: #ffffff;
+  --dark-bg: #030712;
+  --light-bg: #ffffff;
 }
 html {
-	scroll-behavior: smooth;
-	box-sizing: border-box;
-	min-height: 101%;
-	scroll-padding-top: 89px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  min-height: 101%;
+  scroll-padding-top: 89px;
 }
 
 /*  #ffc063 - pale orange */
@@ -18,97 +18,107 @@ html {
 /* define color variable */
 
 @layer components {
-	.flex-row-between {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: self-start;
-	}
-	.dark {
-		@apply bg-gray-950 text-white;
-	}
+  .flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-start;
+  }
+  .dark {
+    @apply bg-gray-950 text-white;
+  }
 
-	.light {
-		@apply bg-white text-black;
-	}
-	.custom-h {
-		height: calc(100vh - 90px);
-	}
-	.border-rad {
-		border-radius: 0.5rem;
-	}
-	.flex-row-center {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-	.flex-col {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-items: flex-start;
-	}
-	.nav-btn {
-		font-weight: 600;
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
-	}
-	.nav-btn:hover {
-		color: #e69417;
-	}
+  .light {
+    @apply bg-white text-black;
+  }
+  .custom-h {
+    height: calc(100vh - 90px);
+  }
+  .border-rad {
+    border-radius: 0.5rem;
+  }
+  .flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+  }
+  .nav-btn {
+    font-weight: 600;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .nav-btn:hover {
+    color: #e69417;
+  }
 
-	.orange-hover:hover {
-		color: #e69417;
-	}
+  .orange-hover:hover {
+    color: #e69417;
+  }
 
-	.toggleSwitch {
-		width: 60px;
-		height: 32px;
-		border-radius: 25px;
-		padding: 8px;
-		display: flex;
-		align-items: center;
-		cursor: pointer;
-		z-index: 2;
-	}
+  .toggleSwitch {
+    width: 60px;
+    height: 32px;
+    border-radius: 25px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+  }
 
-	/* CSS for switch when "on"*/
-	.toggleSwitch.on {
-		background-color: rgb(33, 38, 52);
-		justify-content: flex-end;
-		/* for smooth transition*/
-		transition: 0.5s ease-in-out;
-	}
+  /* CSS for switch when "on"*/
+  .toggleSwitch.on {
+    background-color: rgb(33, 38, 52);
+    justify-content: flex-end;
+    /* for smooth transition*/
+    transition: 0.5s ease-in-out;
+  }
 
-	/*CSS for switch when "off"*/
-	.toggleSwitch.off {
-		background-color: #f1f1f1;
-		justify-content: flex-start;
-		transition: 0.5s ease-in-out;
-	}
-	.border-1 {
-		border: 1px solid rgb(31 41 55);
-	}
-	.swiper {
-		width: 100%;
-		height: 100%;
-	}
+  /*CSS for switch when "off"*/
+  .toggleSwitch.off {
+    background-color: #f1f1f1;
+    justify-content: flex-start;
+    transition: 0.5s ease-in-out;
+  }
+  .border-1 {
+    border: 1px solid rgb(31 41 55);
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
 
-	.swiper-slide {
-		text-align: center;
-		font-size: 18px;
-		background: #fff;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
-		/* Center slide text vertically */
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.swiper-slide img {
-		/* display: block; */
-		width: 20%;
-		height: 20%;
-		object-fit: cover;
-	}
+  .swiper-slide img {
+    /* display: block; */
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+  }
+
+  .sample-slider {
+    width: 70%;
+  }
+  .sample-slider img {
+    width: 100%;
+  }
+  .sample-slider .swiper-wrapper {
+    transition-timing-function: linear;
+  }
 }
