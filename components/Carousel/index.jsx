@@ -23,6 +23,10 @@ export default function Carousel({ skills }) {
           slidesPerView: 4,
           spaceBetween: 8,
         },
+        480: {
+          slidesPerView: 5,
+          spaceBetween: 8,
+        },
         640: {
           slidesPerView: 6,
           spaceBetween: 8,
