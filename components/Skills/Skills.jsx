@@ -1,13 +1,10 @@
 import React from "react";
-import Carousel from "./Carousel";
-import Carousel2 from "../Carousel";
-import { DiJava, DiJavascript1, DiMsqlServer, DiCss3 } from "react-icons/di";
+import Carousel from "../Carousel";
+import { DiJavascript1, DiMsqlServer, DiCss3 } from "react-icons/di";
 
 import {
-  SiJenkins,
   SiJira,
   SiSelenium,
-  SiCucumber,
   SiFirebase,
   SiMysql,
   SiPostman,
@@ -145,12 +142,12 @@ const Skills = () => {
       id="skills"
       className={` ${
         isDark ? "dark" : "light"
-      } flex flex-col align-middle  justify-between mock-border mb-16 w-full md:w-2/3 "`}
+      } flex flex-col align-middle  justify-between mock-border w-full md:w-4/5 "`}
     >
       <h1 className="font-bold text-2xl block text-center w-full md:w-full mx-auto py-4 border-gray-500 border-b-2  ">
         Skills and Tools
       </h1>
-      <Carousel2 skills={skills} />
+      <Carousel skills={skills} />
     </div>
   );
 };

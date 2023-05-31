@@ -10,14 +10,12 @@ export default function Carousel({ skills }) {
   const { isDark } = useTheme();
   return (
     <Swiper
-      // slidesPerView={2}
-      // // slidesPerGroup={3}
-      // slidesPerGroupAuto={true}
-      // slidesPerGroupSkip={2}
       loop={true}
       speed={900}
       autoplay={{
         delay: 0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       }}
       // Responsive breakpoints
       breakpoints={{
@@ -25,7 +23,6 @@ export default function Carousel({ skills }) {
           slidesPerView: 4,
           spaceBetween: 8,
         },
-
         640: {
           slidesPerView: 6,
           spaceBetween: 8,
@@ -46,7 +43,6 @@ export default function Carousel({ skills }) {
         skills.map((item, index) => {
           return (
             <SwiperSlide
-              cl
               key={index}
               className=" !flex flex-col justify-center items-center mt-4"
             >

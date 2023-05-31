@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FiMoon, FiSun } from "react-icons/fi";
-import { useTheme } from '../context/Theme';
-
+import { useTheme } from "../context/Theme";
 
 const Switch = ({ isDark, ...rest }) => {
-  const customClassName = `toggleSwitch ${isDark ? "on" : "off"} md-max:!w-12 md-max:!h-7`;
+  const customClassName = `toggleSwitch ${
+    isDark ? "on" : "off"
+  } md-max:!w-12 md-max:!h-7`;
 
   return (
     <motion.div animate className={`${customClassName} `} {...rest}>
@@ -17,9 +18,7 @@ const Switch = ({ isDark, ...rest }) => {
 };
 
 const ThemeSwitch = () => {
-
   const { isDark, toggle } = useTheme();
-
 
   return <Switch isDark={isDark} onClick={() => toggle()} />;
 };

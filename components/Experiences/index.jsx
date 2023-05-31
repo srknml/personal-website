@@ -16,7 +16,7 @@ const Experiences = () => {
       id="experiences"
       className="flex flex-col flex-grow  align-middle  justify-between mock-border w-full md:w-4/5 mx-auto "
     >
-      <h1 className="font-bold my-2 text-2xl block text-center w-full md:w-full mx-auto py-4 border-gray-500 border-b-2  ">
+      <h1 className="font-bold text-2xl block text-center w-full md:w-full mx-auto mt-4 py-2">
         Experiences
       </h1>
       {/* Whitespaces will be added after Job Title */}

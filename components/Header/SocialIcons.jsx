@@ -21,7 +21,7 @@ const items = [
   },
 ];
 
-const SocialIcons = ({ motions,isDark }) => {
+const SocialIcons = ({ motions, isDark }) => {
   return (
     <motion.div
       initial={motions.rightToLeft.initial}
