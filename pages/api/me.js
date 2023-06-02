@@ -8,14 +8,15 @@ const user = {
     github: "https://github.com/srknml",
     linkedin: "https://www.linkedin.com/in/serkan-nemli-b9a0001b6/",
     location: "Istanbul, Turkey",
-    resume: "https://docs.google.com/document/d/e/2PACX-1vTcTgw8hrDRzvzu_E8qisaA9tea33B6104PnywlrK1SG9tjx1-g8Pwc5yePtsd56BErV8-svFIegFWm/pub",
-
+    resume:
+      "https://docs.google.com/document/d/e/2PACX-1vTcTgw8hrDRzvzu_E8qisaA9tea33B6104PnywlrK1SG9tjx1-g8Pwc5yePtsd56BErV8-svFIegFWm/pub",
   },
   skills: {
     general: ["git", "Github", "VSCode", "intelliJ", "Terminal", "Jira"],
     languages: ["Java", "JavaScript"],
     frontend: [
-      "HTML", "CSS",
+      "HTML",
+      "CSS",
       "Javascript",
       "React",
       "Nextjs",
@@ -24,7 +25,17 @@ const user = {
       "Tailwindcss",
     ],
     devops: ["Jenkins", "AWS"],
-    testing: ["Selenium","Maven","JUnit","TestNG","HamCrest", "RestAssured", "Postman", "Cypress", "Cucumber"],
+    testing: [
+      "Selenium",
+      "Maven",
+      "JUnit",
+      "TestNG",
+      "HamCrest",
+      "RestAssured",
+      "Postman",
+      "Cypress",
+      "Cucumber",
+    ],
     databases: ["MySQL", "PostgreSQL", "Firebase"],
     misc: ["Agile", "Scrum", "Jira", "Trello", "Confluence", "Figma"],
   },
@@ -48,5 +59,5 @@ const user = {
 };
 
 export default function handler(req, res) {
-  res.status(200).json({message:"Working on it!"});
+  res.status(200).json({ message: "Working on it!" });
 }
