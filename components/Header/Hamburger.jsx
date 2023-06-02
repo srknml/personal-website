@@ -7,7 +7,7 @@ const Hamburger = ({ setIsOpen, isOpen, isDark }) => {
         onClick={() => setIsOpen(!isOpen)}
         className={`${
           isDark ? "dark" : "light"
-        } flex items-center px-3 py-2 rounded`}
+        } hamburger`}
       >
         <svg
           className={`fill-current h-4 w-4 ${isOpen ? "hidden" : "block"}`}

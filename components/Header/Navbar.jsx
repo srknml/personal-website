@@ -38,7 +38,7 @@ const Navbar = (props) => {
           props.isDark ? "dark" : "light"
         } flex-row-between md:flex md:items-center md:w-auto ${
           isOpen ? "flex-col" : "hidden"
-        } `}
+        }  `}
       >
         {Routes.map((route) => {
           return (
