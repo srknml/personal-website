@@ -1,9 +1,6 @@
 import React from "react";
-import { motion, useInView } from "framer-motion";
-import Image from "next/image";
-// import Ticker from "./Ticker";
+import { motion } from "framer-motion";
 import Ticker from "framer-motion-ticker";
-import { DiJava } from "react-icons/di";
 
 const Slide = ({ title, skills, direction, duration }) => {
   const [isPlaying, setIsPlaying] = React.useState(true);
@@ -32,18 +29,16 @@ const Slide = ({ title, skills, direction, duration }) => {
               <div
                 onMouseEnter={(e) => {
                   // skill.x = false;
-                  console.log("Enter")
+                  console.log("Enter");
                 }}
                 onMouseLeave={(e) => {
                   // skill.x = true;
-                  console.log("Leave")
-
+                  console.log("Leave");
                 }}
                 onClick={(e) => {
                   skill.x = false;
-                  console.log("Click")
-                }
-                }
+                  console.log("Click");
+                }}
                 className={
                   isPlaying
                     ? " bg-[#0b1c3182] p-4 border-rad mx-2 "

@@ -18,7 +18,9 @@ const AccordionBox = ({ title, date, points }) => {
         <>
           <h2
             className={`${isExpanded ? "shadow-sm shadow-[#1623338e]" : ""} ${
-              isDark ? "hover:bg-[#121e2c38] " : " bg-slate-200 hover:bg-slate-300"
+              isDark
+                ? "hover:bg-[#121e2c38] "
+                : " bg-slate-200 hover:bg-slate-300"
             }    py-4 px-2 w-full   `}
           >
             <AccordionButton className="w-full">
@@ -29,7 +31,11 @@ const AccordionBox = ({ title, date, points }) => {
               </Box>
             </AccordionButton>
           </h2>
-          <AccordionPanel className={`${isDark ?  "bg-[#24467044]": " bg-slate-100"}   p-2 mt-2 text-base inline-block w-full  bg-[#24467044] `}>
+          <AccordionPanel
+            className={`${
+              isDark ? "bg-[#24467044]" : " bg-slate-100"
+            }   p-2 mt-2 text-base inline-block w-full  bg-[#24467044] `}
+          >
             <ExperiencePoint points={points} />
           </AccordionPanel>
         </>

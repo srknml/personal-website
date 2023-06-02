@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  AnimationPlaybackControls,
-  useAnimate,
-  useInView,
-} from "framer-motion";
+import { useAnimate, useInView } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
 
 const TICKER_DIRECTION_LEFT = -1;
@@ -45,7 +41,7 @@ const Ticker = (props) => {
     }
 
     setTickerContentWidth(contentWidth);
-  });
+  }, [children.length, tickerUUID]);
 
   React.useEffect(() => {
     if (tickerRef.current && tickerContentWidth) {
@@ -56,7 +52,7 @@ const Ticker = (props) => {
         )
       );
     }
-  }, [tickerRef.current, tickerContentWidth]);
+  }, [tickerContentWidth]);
 
   React.useEffect(() => {
     if (isInView && !animationControls) {
@@ -68,7 +64,15 @@ const Ticker = (props) => {
       controls.play();
       setAnimationControls(controls);
     }
-  }, [isInView]);
+  }, [
+    animate,
+    animationControls,
+    direction,
+    duration,
+    isInView,
+    scope,
+    tickerContentWidth,
+  ]);
 
   React.useEffect(() => {
     if (animationControls) {
@@ -78,7 +82,7 @@ const Ticker = (props) => {
         animationControls.play();
       }
     }
-  }, [isInView, isPlaying]);
+  }, [animationControls, isInView, isPlaying]);
 
   return (
     <div

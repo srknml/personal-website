@@ -5,7 +5,6 @@ import Hero from "../components/Hero/Hero";
 import Skills from "../components/Skills/Skills";
 import Experiences from "../components/Experiences";
 import { useTheme } from "../context/Theme";
-import Carousel from "../components/Carousel";
 
 export default function Home() {
   const { isDark } = useTheme();

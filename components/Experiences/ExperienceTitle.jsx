@@ -1,8 +1,8 @@
 import React from "react";
-import { useTheme } from '../../context/Theme'
+import { useTheme } from "../../context/Theme";
 
 const ExperienceTitle = ({ jobTitle, date }) => {
-  const { isDark } = useTheme()
+  const { isDark } = useTheme();
 
   return (
     <div className="flex flex-col flex-grow  border-slate-700 border-b-2 mb-2 pb-1  justify-center align-top w-full">

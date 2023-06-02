@@ -6,7 +6,7 @@ const ExperiencePoint = ({ points }) => {
       {points &&
         points.map((point, i) => {
           return (
-            <li  key={i} className="p-1 my-1">
+            <li key={i} className="p-1 my-1">
               {`• ${point}`}
             </li>
           );
