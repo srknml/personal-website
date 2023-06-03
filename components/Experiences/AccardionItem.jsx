@@ -26,8 +26,17 @@ const AccordionBox = ({ title, date, points }) => {
             <AccordionButton className="w-full">
               <AccordionIcon />
 
-              <Box pl={8} as="span" textAlign="left">
-                {title} - <i className="text-xs">{date} </i>
+              <Box
+                pl={8}
+                as="div"
+                textAlign="left"
+                className="flex w-full flex-row justify-between"
+              >
+                <p> {title} </p>{" "}
+                <span className="text-xs !leading-7 align-middle italic">
+                  {date}{" "}
+                </span>
+                {/* {title} - al <i className="text-xs">{date} </i> */}
               </Box>
             </AccordionButton>
           </h2>
