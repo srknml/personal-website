@@ -24,7 +24,11 @@ const Buttons = ({ links }) => {
       }}
       className="flex flex-row justify-center p-2 w-full mx-auto  "
     >
-      <Link href={resume}>
+      <Link
+        href={"/SerkanNemli-SDET.pdf"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <a
           rel="noopener noreferrer"
           target="_blank"
