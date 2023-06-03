@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import myImage from "../../public/image.jpg";
+import myImage from "../../public/image2.jpg";
 import { motion } from "framer-motion";
 import Utils from "../../Utils/index";
 
