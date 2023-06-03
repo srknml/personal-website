@@ -5,6 +5,7 @@ import Hero from "../components/Hero/Hero";
 import Skills from "../components/Skills/Skills";
 import Experiences from "../components/Experiences";
 import { useTheme } from "../context/Theme";
+import Education from "../components/Education";
 
 export default function Home() {
   const { isDark } = useTheme();
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Experiences />
+      <Education />
     </div>
   );
 }

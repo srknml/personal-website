@@ -24,6 +24,9 @@ html {
     justify-content: space-between;
     align-items: self-start;
   }
+  .sectionTitle {
+    @apply font-bold text-2xl block text-center w-full md:w-full mx-auto mt-4 py-2
+  }
   .main {
     @apply flex flex-col min-h-screen min-w-full items-center
   }
