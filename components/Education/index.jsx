@@ -1,7 +1,9 @@
 import React from "react";
 import EducationData from "../../public/Education.json";
+import { useTheme } from "../../context/Theme";
 
 const Education = () => {
+  const { isDark } = useTheme();
   return (
     <section id="education" className="sectionContainer">
       <h1 className="sectionTitle">Education</h1>
@@ -11,11 +13,13 @@ const Education = () => {
             return (
               <div
                 key={index}
-                className=" bg-gray-100 flex flex-col flex-grow p-2 my-2 text-lg justify-center align-top w-full"
+                className={`${
+                  isDark ? "  bg-[#24467044]" : "light"
+                }  flex flex-col flex-grow p-2 my-2 text-lg justify-center align-top w-full`}
               >
                 <div className="flex w-full flex-row justify-between">
                   <p> • {data.title} </p>
-                  <span className="text-xs !leading-7 align-middle italic">
+                  <span className="text-sm !leading-7 align-middle">
                     {data.date}{" "}
                   </span>{" "}
                 </div>

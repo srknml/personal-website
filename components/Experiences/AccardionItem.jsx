@@ -33,7 +33,7 @@ const AccordionBox = ({ title, date, points }) => {
                 className="flex w-full flex-row justify-between"
               >
                 <p> {title} </p>{" "}
-                <span className="text-xs !leading-7 align-middle italic">
+                <span className="text-sm !leading-7 align-middle italic">
                   {date}{" "}
                 </span>
                 {/* {title} - al <i className="text-xs">{date} </i> */}

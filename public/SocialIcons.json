@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Linkedin",
+    "url": "https://www.linkedin.com/in/serkan-nemli-b9a0001b6/",
+    "network": ""
+  },
+  {
+    "name": "Github",
+    "url": "https://github.com/srknml",
+    "network": ""
+  },
+
+  {
+    "name": "Email",
+    "url": "mailto:contact@serkannemli.com",
+    "network": "email"
+  }
+]
