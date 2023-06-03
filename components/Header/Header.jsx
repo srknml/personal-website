@@ -11,10 +11,7 @@ const Header = () => {
 
   const { isDark, toggle } = useTheme();
   // TODO : More Skills Icons
-  // TODO : Add More Projects
-  // TODO : Add More Blogs
   // TODO : Add Footer
-  // TODO : Add RESUME
   return (
     <header
       className={` ${isDark ? "dark" : "light"} header  ${
