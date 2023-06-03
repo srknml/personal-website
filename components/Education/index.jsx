@@ -14,7 +14,7 @@ const Education = () => {
               <div
                 key={index}
                 className={`${
-                  isDark ? "  bg-[#24467044]" : "light"
+                  isDark ? "  bg-[#24467044]" : "light bg-slate-100"
                 }  flex flex-col flex-grow p-2 my-2 text-lg justify-center align-top w-full`}
               >
                 <div className="flex w-full flex-row justify-between">
