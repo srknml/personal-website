@@ -14,7 +14,7 @@ const Experiences = () => {
   return (
     <div
       id="experiences"
-      className="flex flex-col flex-grow  align-middle  justify-between mock-border w-full md:w-4/5 mx-auto "
+      className="flex flex-col flex-grow  align-middle  justify-between w-full md:w-4/5 mx-auto "
     >
       <h1 className="font-bold text-2xl block text-center w-full md:w-full mx-auto mt-4 py-2">
         Experiences

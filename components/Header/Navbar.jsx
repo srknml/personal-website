@@ -15,14 +15,6 @@ const Routes = [
     name: "Experiences",
     path: "#experiences",
   },
-  {
-    name: "Contact",
-    path: "#contact",
-  },
-  {
-    name: "Blog",
-    path: "#blog",
-  },
 ];
 
 const Navbar = (props) => {
