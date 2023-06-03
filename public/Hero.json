@@ -1,10 +1,9 @@
 {
   "title": "Serkan Nemli",
   "article": "Highly motivated Software Automation Tester with hands-on experience in manual and automation testing of web applications, including database and API, in agile environments. Proven ability in design and building automation frameworks by using Object Oriented Programming principles. Disciplined and capable of managing heavy workloads while maintaining attention to detail. Self-driven learner consistently seeking growth opportunities. Ready to contribute to the success of software projects with a strong focus on communication and teamwork.",
-  "links": [
-    {
-      "resume": "https://docs.google.com/document/d/e/2PACX-1vTcTgw8hrDRzvzu_E8qisaA9tea33B6104PnywlrK1SG9tjx1-g8Pwc5yePtsd56BErV8-svFIegFWm/pub"
-    },
-    { "mail": "mailto:contact@serkannemli.com" }
-  ]
+  "links": {
+    "resume": "https://docs.google.com/document/d/e/2PACX-1vTcTgw8hrDRzvzu_E8qisaA9tea33B6104PnywlrK1SG9tjx1-g8Pwc5yePtsd56BErV8-svFIegFWm/pub",
+
+    "mail": "mailto:contact@serkannemli.com"
+  }
 }

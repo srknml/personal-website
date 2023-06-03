@@ -2,11 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Router from "next/router";
-import { useTheme } from '../../context/Theme';
+import { useTheme } from "../../context/Theme";
 
-const Buttons = () => {
+const Buttons = ({ links }) => {
   const { isDark } = useTheme();
-
+  const { resume, mail } = links;
 
   return (
     <motion.div
@@ -24,24 +24,28 @@ const Buttons = () => {
       }}
       className="flex flex-row justify-center p-2 w-full mx-auto  "
     >
-      <Link
-        href={
-          "https://docs.google.com/document/d/e/2PACX-1vTcTgw8hrDRzvzu_E8qisaA9tea33B6104PnywlrK1SG9tjx1-g8Pwc5yePtsd56BErV8-svFIegFWm/pub"
-        }
-      >
+      <Link href={resume}>
         <a
           rel="noopener noreferrer"
           target="_blank"
-          className={`${isDark ?
-            " text-slate-950 hover:text-white  bg-[#e69417] hover:bg-transparent hover:border-[#e69417] hover:border-2 "
-            : "dark hover:light  hover:border-slate-800 hover:border-2 "}
+          className={`${
+            isDark
+              ? " text-slate-950 hover:text-white  bg-[#e69417] hover:bg-transparent hover:border-[#e69417] hover:border-2 "
+              : "dark hover:light  hover:border-slate-800 hover:border-2 "
+          }
            md-max:w-1/2 text-center w-1/4 border-2 border-transparent  font-bold m-1 py-2 px-5 rounded-xl`}
         >
           Resume
         </a>
       </Link>
-      <button onClick={() => Router.push('mailto:contact@serkannemli.com')}
-        className={` ${isDark ? " border-[#e69417] border-1 hover:border-[#f5b95f]" : " bg-white text-slate-600 hover:text-slate-800 border-1  hover:border-[#867d6f]"} md-max:w-1/2 w-1/4 font-bold m-1 py-2 px-5 rounded-lg`}>
+      <button
+        onClick={() => Router.push(mail)}
+        className={` ${
+          isDark
+            ? " border-[#e69417] border-1 hover:border-[#f5b95f]"
+            : " bg-white text-slate-600 hover:text-slate-800 border-1  hover:border-[#867d6f]"
+        } md-max:w-1/2 w-1/4 font-bold m-1 py-2 px-5 rounded-lg`}
+      >
         Contact
       </button>
     </motion.div>

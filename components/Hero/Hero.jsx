@@ -3,10 +3,11 @@ import Imagebox from "./Imagebox";
 import Article from "./Article";
 import Buttons from "./Buttons";
 import { useTheme } from "../../context/Theme";
+import ArticleData from "../../public/Hero.json";
 
 const Hero = () => {
   const { isDark } = useTheme();
-
+  const { title, article, links } = ArticleData;
   return (
     <section
       id="home"
@@ -16,9 +17,9 @@ const Hero = () => {
     >
       <div className=" md-max:space-y-5 flex flex-col items-center md:flex md:flex-row  my-autp p-2 justify-center align-middle space-x-4">
         <Imagebox />
-        <Article />
+        <Article title={title} article={article} />
       </div>
-      <Buttons />
+      <Buttons links={links} />
     </section>
   );
 };
